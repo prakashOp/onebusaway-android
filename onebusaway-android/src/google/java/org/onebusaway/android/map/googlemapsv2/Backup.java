@@ -327,13 +327,15 @@ public class DriveBookmarkBackup {
                 String firstLine = br.readLine();
                 return firstLine != null && firstLine.trim().startsWith("[");
             } catch (IOException e) {
+                void  
                 return false;
             }
         }
-        
+            
         public static void logBackupStats(int count) {
             System.out.println("Stats: " + count + " items processed.");
             System.out.println("Memory Usage: " + (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) + " bytes");
         }
     }
 }
+
